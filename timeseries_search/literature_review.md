@@ -1,4 +1,4 @@
-# Subsequence search on Multivariate time-series (MTS) - literature review
+# Similarity search on time-series (MTS) - literature review
 
 ## Multivariate time series
 - [Wang 14] Multivariate Time Series Similarity Searching
@@ -261,7 +261,6 @@
 			- Solution; don't represent all smaller series by the PAA of the larger series (named *master series* in the paper), but instead store the PAA values of all (normalized) series of length l_min to l_max for each possible shift.
 			- I.e., as a result, given a timeseries T, for each offset o \in [0, n-l_min], you get a set of PAA representations of size l_max - l_min + 1.
 			- Envelopes per PAA segment are now derived over all possible subsequences rather than just the master series.
-
 
 - [Rakthanmanon 12] Searching and Mining Trillions of Time Series Subsequences under Dynamic Time Warping
 	- Pattern matching

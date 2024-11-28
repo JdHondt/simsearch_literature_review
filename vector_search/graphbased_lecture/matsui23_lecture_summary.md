@@ -25,10 +25,11 @@
     1. Index construction
         - General idea: connect each vector in the dataset to its kNN, then prune edges to reduce the graph size.
     2. Search
-        1. Start from a random node and compute its distance to Q.
-        2. Expand: Then, do the same for the neighbors of the node.
-        3. Keep a priority queue capped at size L (beam width) prioritized by the distance to Q. Take nodes from the queue and expand them.
-        4. Terminate when you have already visited all neighbours of the last node taken from the queue.
+        0. Initialize two priority queues: C and Res. Res is capped at size L. C stores the points to be visited. Res stores the L closest points to the query Q that have been visited.
+        1. Start from a random node N1 and compute its distance to Q.
+        2. Put N1 in Res and its neighbors in C.
+        3. Pop a node N from C, compute its distance to Q, put its neighbours in C if N ends up in Res.
+        4. Terminate when C is empty.
     3. Differences
         - Algorithms differ in their graph structure, search strategy, termination conditions, and starting point.
     4. HNSW

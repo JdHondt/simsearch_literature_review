@@ -1,4 +1,4 @@
-# Matsui 2023 - Survey on Vector Similarity Search Algorithms at billion-scale - Tutorial @ CVPR 2023
+# Aumüller 2023 - Survey on Vector Similarity Search Algorithms at billion-scale - Tutorial @ CVPR 2023
 - Survey on vector similarity search algorithms like HNSW, NMSLIB, etc.
 - Part of a tutorial on neural search at CVPR 2023.
 - By Martin Aumüller, University of Copenhagen.
